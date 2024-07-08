@@ -1,0 +1,120 @@
+0.###################
+Get a list of countries
+owner: milos
+file: countries.py
+Description: parse a wiki page as html, extract country/territory names
+             which are referable to as Wikipedia article titles
+-
+def get_all_countries()
+input: none
+returns: list_of_countries ["Sao Tome and Principe", "Madagascar"...]
+suggestions:  update to read from preset_file if it exists [Antonio] ✅
+Status: DONE
+   if TO DO, who is working on it: []
+
+
+1.################### 
+Fetch summary
+Owner: Aroo
+File: formatsummary.py
+Description: Fetch summary for a given country and extracts it
+-
+def pick_country_and_format_summary(list_of_countries)
+Input: list_of_countries
+Returns: (Country, Cleaned Description)
+Suggestions: alternatives for incorrect Summary [Milos] ✅
+Status: DONE
+   If TO DO, who is working on it: []
+
+
+2. ################### 
+Clean Data
+Owner: Aroo
+File: formatsummary.py 
+Description: replace the country name with _____
+-
+def pick_country_and_format_summary(list_of_countries)
+Input: list_of_countries
+Returns: Tuple (Country, Cleaned Description) # both elements as strings
+Suggestions: remove flexed forms of country name (Portugal, Portuguese...) [Milos]
+Status: filtering flexed forms
+   If TO DO, who is working on it: [Aroosha]
+  
+
+
+3. ################### 
+Generate 3 bad answers
+Owner: Milos
+File: milos.py
+Description: Takes a correct-answer-country returns a list of three bad answers.
+-
+def gen_bad_answers(correct_answer, list_of_countries):
+   # tbd
+   return [bad_answer1, bad_answer2, bad_answer3] 
+Input: A right contry (String), the list of all countries
+Returns: A list of three unique countries, different to the right country.
+Status: DONE
+   If TO DO, who is working on it: []
+
+
+4. ###################
+Play one round
+owner: Artjom
+file: xxxx.py
+description: Let the user play one round.
+-
+def play_one_round(input_tuple, bad_answers):
+   # print_prompt()
+   # answer_correctness = process_user_choice()
+   # return answer_correctness  # --> (0 or 1)
+Inputs: the return values of 2.##Clean data and 
+3.##gen_bad_answers
+   input_tuple = ("countryname", "triviatext")
+   bad_answers = [bad_answer1, bad_answer2, bad_answer3]
+Returns: 0 for lose or 1 for win
+Status: DONE
+   If TO DO, who is working on it: [artjom]
+
+
+5. ###################
+Displaying the scores
+Owner: Antonio
+File: display_counter.py
+Description: Displaying the scores
+-
+def display_score(score, NUM_OF_ROUNDS)
+Input: score, number of rounds
+Return: None (prints out the results)
+Status: TO DO
+   if TO DO, who is working on it: [antonio]
+
+
+6. ###################
+
+Main function: 
+# 0. get_all_countries
+while looping NUM_OF_ROUNDS times over < rounds:
+   # 1. fetch summary
+   # 2. clean data
+   # 3. gen_bad_answers
+   # 4. play_one_round
+   NUM_OF_ROUNDS +=1
+# 5. displaying the scores
+
+
+7. ###################
+
+Project management: Ahmed
+Tasks:
+- maintenance / coordination of the main function
+- ensuring proper return values according to tasks.txt
+- ensuring proper interfacing of functions
+
+Features and bugs:
+* add red and green printouts per round owner[4]
+* sometimes two texts per country owner[1]
+* sometimes _____ sometimes ***** owner[2]
+* take care of the languages and flexed forms[2]
+* error Traceback after some rounds played
+    Who will look into it first:
+

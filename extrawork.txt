@@ -1,0 +1,35 @@
+0.###################
+Add some text
+owner: artem
+file: ...
+Description: Create a text "correct answer" or "incorrect answer" after every round
+Status: DONE
+   if TO DO, who is working on it: [artem]
+
+1.###################
+Add colors 
+owner: artem
+file: artjom.py
+Description: Add colors to the output 
+Status: TO DO
+   if TO DO, who is working on it: [artjom]
+
+2.###################
+owner: milos
+file: ...
+Description: sometimes two text per country
+sometimes _____ sometimes *****
+I'd like to take care of the languages and flexed forms
+Status: DONE
+
+3.###################
+Final print
+owner: 
+file: ...
+Description: .After completing the program, we must take a beautiful print with the player's result and offer to play a new game
+Status: ...
+   if TO DO, who is working on it: []
+
+
+Further misbehavior observations:
+
